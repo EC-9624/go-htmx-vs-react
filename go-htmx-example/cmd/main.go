@@ -36,7 +36,7 @@ func main() {
 	
 	mux.HandleFunc("/web-socket", h.WebSocket) // Handle websocket page
 	mux.HandleFunc("/oob-update", h.OobUpdate)
-	mux.HandleFunc("/count", h.AddCount)
+	mux.HandleFunc("/add-count", h.AddCount)
 	mux.HandleFunc("/remove-count", h.RemoveCount)
 	mux.HandleFunc("/get-count", h.GetCount)
 
