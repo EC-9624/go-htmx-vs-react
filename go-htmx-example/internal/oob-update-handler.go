@@ -33,7 +33,7 @@ func (h *Handlers) RemoveCount(w http.ResponseWriter, r *http.Request) {
 // GET count on load
 func (h *Handlers) GetCount(w http.ResponseWriter, r *http.Request) {
     w.Header().Set("Content-Type", "text/html")
-    fmt.Fprintf(w, `<span id="oob-span" hx-get="/get-count" hx-trigger="load" hx-target="#oob-span" hx-swap="outerHTML"
+    fmt.Fprintf(w, `<span id="oob-span" hx-get="/get-count" hx-target="#oob-span" hx-swap="outerHTML"
         class="inline-flex items-center px-2 text-white bg-red-500 rounded-full shadow-md">
         %d
     </span>`, count.Count)

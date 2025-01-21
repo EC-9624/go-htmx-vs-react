@@ -33,12 +33,10 @@
 </html>
 {{ end }}
 
-
-
 {{define "nav-bar"}}
-<header class="min-h-full ">
+<header class="min-h-full">
     <nav class=" bg-gray-800">
-        <div class=" mx-auto max-w-7xl px-4">
+        <div class="mx-auto max-w-7xl px-4">
             <div class="flex h-16 items-center justify-between">
                 <div class="flex items-center gap-6">
                     <div class="flex-shrink-0">
@@ -46,8 +44,8 @@
                             src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.3c5441fc7a190fb1800d4a5c7f07ba4b1345a9c8.svg"
                             alt="your company">
                     </div>
-                    <div className="hidden md:block">
-                        <div className="ml-10 flex items-baseline space-x-4">
+                    <div class="hidden md:block">
+                        <div class="ml-10 flex items-baseline space-x-4">
                             <a class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium cursor-pointer"
                                 hx-get="/" hx-target="#content" hx-swap="innerHTML">Home</a>
                             <a class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium cursor-pointer"
@@ -60,13 +58,13 @@
                                 id="oob-target" hx-get="/oob-update" hx-target="#content" hx-swap="innerHTML"
                                 hx-swap-oob="true">
                                 Oob update
-                                <span id="oob-span" hx-get="/get-count" hx-trigger="load" hx-target="#oob-span"
-                                    hx-swap="outerHTML"
+                                <span id="oob-span" hx-get="/get-count" hx-target="#oob-span" hx-swap="outerHTML"
+                                    hx-trigger="load"
                                     class="inline-flex items-center px-2 text-white bg-red-500 rounded-full shadow-md">
                                     {{.Count}}
                                 </span>
-                            </a>
 
+                            </a>
                         </div>
                     </div>
                 </div>

@@ -5,10 +5,10 @@ export default function ComponentUpdate({ count, setCount }) {
       <header className="bg-white shadow">
         <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
           <h1 className="text-3xl font-bold tracking-tight text-gray-900">
-            Out of Bound Updates
+            Component Updates
           </h1>
           <p className="text-gray-500 text-md">
-            Example of how React handles Out of Bound Updates
+            Example of how React handles Component Updates
           </p>
         </div>
       </header>
@@ -33,7 +33,9 @@ function Content({ count, setCount }) {
 
   return (
     <div className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
-      <h1 id="counter">Count = {count}</h1>
+      <h1 id="counter" className="text-4xl font-extrabold">
+        Count = {count}
+      </h1>
       <button
         onClick={handleIncrement}
         className="bg-blue-500 text-white font-semibold py-2 px-2 rounded-md hover:bg-blue-600"
